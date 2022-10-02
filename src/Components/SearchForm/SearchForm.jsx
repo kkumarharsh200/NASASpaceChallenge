@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { Search } from "../../Context";
 import "./SearchForm.css";
 
 function SearchForm() {
   const [showFilter, setShowFilter] = useState(false)
+  
+  const {search, setSearch} = useContext(Search)
+  
+  // function handleCheck(e) {
+     
+  // }
+
   return (
     <div className="searchForm">
 
@@ -14,6 +22,7 @@ function SearchForm() {
           type="checkbox"
           value="aeronautics"
           name="aeronautics"
+          // onChange={handleCheck(e.target.value)}
         />
         <span className="cbtitle">Aeronautics</span>
         <input

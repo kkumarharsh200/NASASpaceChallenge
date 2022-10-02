@@ -1,8 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
+import { Search } from "../../Context";
 import './SearchComponent.css'
 
 function SearchComponent() {
-  const [searchTopic, setSearchTopic] = useState("")
+  // const [searchTopic, setSearchTopic] = useState("")
+  const {search, setSearch} = useContext(Search)
+  console.log(search)
   return (
     <div className="searchInput">
       <form className="topicSearchForm">
@@ -11,7 +14,7 @@ function SearchComponent() {
           className="topicInput"
           type="text"
           placeholder="Search Topic..."
-          onChange={(e) => setSearchTopic(e.target.value)}
+          onChange={(e) => setSearch(e.target.value)}
         ></input>
       </form>
       {/* <h1>{searchTopic}</h1> */}

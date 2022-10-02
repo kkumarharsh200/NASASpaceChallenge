@@ -1,0 +1,25 @@
+.navbar {
+    background-color: rgb(44, 63, 96);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+.explorer {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: orange;
+}

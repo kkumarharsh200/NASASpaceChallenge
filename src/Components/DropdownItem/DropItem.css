@@ -1,0 +1,23 @@
+.itemsList {
+    margin-top: 70px;
+    background-color: rgb(18, 30, 26);
+    /* overflow: scroll; */
+    scroll-behavior: smooth;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(4,1fr);
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.topicTitle {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.topicTitle:hover {
+    color: orange;
+    cursor: pointer;
+}
